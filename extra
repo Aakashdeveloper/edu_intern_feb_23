@@ -41,3 +41,18 @@ NodeJs+Express (Backend logics)
 MongoDb > Database (storage)
 React   > Frontend
 Deployment
+
+//////////////////////////
+html> Main tag wrapper
+head> Use for linking css, js and only title is visible to user
+body> All the content visible to user
+
+blockLevel
+> Always start from new line 
+> occupies the whole width of the screen
+> p div h1
+
+inline
+> Always start from same line
+> Only occupies width according to content
+> span img a
