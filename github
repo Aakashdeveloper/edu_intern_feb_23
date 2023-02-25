@@ -1,0 +1,31 @@
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+
+///
+First Time from new folder
+////////
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Aakashdeveloper/aakashProfile.git
+git push -u origin main
+
+///
+Next all time from same folder
+////////
+git add .
+git commit -m "first commit"
+git push
+
+/////////
+> Push code to git 
+> click on setting
+> left hand side click on "pages"
+> Do not change "Source"
+> Branch choose "main"
+> Click "save"
+> Custom domain 
+> Add name of website "aakashprofile"
+> click save
+> Your site is live at https://aakashdeveloper.github.io/aakashProfile/
