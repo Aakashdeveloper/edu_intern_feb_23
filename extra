@@ -87,3 +87,42 @@ social link
 ul > unordered List
 ol > ordered List
 dl > descriptive list
+
+
+//////////
+inline
+styletag
+stylesheet
+
+
+inline > styletag > stylesheet
+
+inline
+{
+    color:red,
+    font-siZe:20px,
+    height:50px
+}
+
+styletag
+{
+    color:orange,
+    width:70px;
+    border:2px solid black
+}
+
+stylesheet
+{
+    height:80px
+    width:90px;
+    Z-index:1
+}
+
+{
+    color:red,
+    font-siZe:20px,
+    height:50px;
+    width:70px;
+    border:2px solid black;
+    Z-index:1
+}
