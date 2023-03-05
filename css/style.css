@@ -1,0 +1,57 @@
+header{
+    text-align: center;
+    color:rgb(68, 75, 17)
+}
+
+#container{
+    display: inline-block
+}
+.card{
+    height:400px;
+    width:20%;
+    background-color:#98bbe5;
+    float:left;
+    margin:2%;
+    overflow: scroll;
+}
+#gray{
+    background-color:#b7ac9e
+}
+.blue {
+    background-color:#6ba6c8
+}
+.card > h2{
+    text-align: center;
+}
+
+.card img{
+    width:100%;
+    height:200px
+}
+#flatCard{
+    height:300px;
+    width:80%;
+    background-color:#b7ac9e;
+    margin-left:10%;
+    float:left
+}
+.section1{
+    float: left;
+    width:40%;
+}
+#section2{
+    float: left;
+    width:50%;
+    overflow: scroll;
+    height: 100%;
+}
+
+.section1 img{
+    width:80%;
+    height:80%;
+    margin-left:8%;
+    margin-top:7%;
+}
+#brown{
+    background-color:#c38973;
+}

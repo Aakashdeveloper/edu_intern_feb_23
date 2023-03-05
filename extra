@@ -126,3 +126,27 @@ stylesheet
     border:2px solid black;
     Z-index:1
 }
+
+/////////
+TagName
+> Target by tag but whatever tag we target all the same tags of one will have same property
+> Only use for unique tags
+
+id
+> Use only for trageting something unique
+> #
+
+Class
+> Use to target group of element with same property
+> .
+
+solid
+dotted
+dashed
+double
+groove
+
+https://imgbb.com/
+
+position:absolute
+position:relative

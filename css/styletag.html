@@ -1,42 +1,109 @@
 <html>
     <head>
         <title>CSS Inline</title>
+        <style>
+            header{
+                text-align: center;
+                color:rgb(68, 75, 17)
+            }
+            #gray{
+                background-color:#b7ac9e
+            }
+            .card{
+                height:400px;
+                width:20%;
+                background-color:#98bbe5;
+                float:left;
+                margin:2%;
+                overflow: scroll;
+            }
+            .blue {
+                background-color:#6ba6c8
+            }
+            .card > h2{
+                text-align: center;
+            }
+
+            .card img{
+                width:100%;
+                height:200px
+            }
+            #flatCard{
+                height:300px;
+                width:80%;
+                background-color:#b7ac9e;
+                margin-left:10%;
+                float:left
+            }
+            .section1{
+                float: left;
+                width:40%;
+            }
+            #section2{
+                float: left;
+                width:50%;
+                overflow: scroll;
+                height: 100%;
+            }
+
+            .section1 img{
+                width:80%;
+                height:80%;
+                margin-left:8%;
+                margin-top:7%;
+            }
+            #brown{
+                background-color:#c38973;
+            }
+           
+           
+        </style>
     </head>
     <body>
-        <h1 style="text-align: center;color:red">About Cities</h1>
-        <div style="height:400px;width:20%;background-color:#98bbe5;float:left;
-        margin:2%;overflow: scroll;">
-            <img src="manali.jpeg" alt="manali" style="width:100%;height:200px"/>
+        <header>
+            <h1>About Cities</h1>
+        </header>
+
+        <div class="card">
+            
+            <img src="manali.jpeg" alt="manali"/>
+            <h2>Manali</h2>
             <p>
                 Manali is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
-        <div style="height:400px;width:20%;background-color:#c38973;float:left;margin:2%;overflow: scroll;">
-            <img src="amsterdam.jpeg" alt="Amsterdam" style="width:100%;height:200px"/>
+        <div class="card" id="brown">
+            
+            <img src="amsterdam.jpeg" alt="Amsterdam"/>
+            <h2 >Amsterdam</h2>
             <p>
                 Amsterdam is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
-        <div style="height:400px;width:20%;background-color:#6ba6c8;float:left;margin:2%;overflow: scroll;">
-            <img src="helsinki.jpeg" alt="Helsinki" style="width:100%;height:200px"/>
+        <div class="card blue">
+            
+            <img src="helsinki.jpeg" alt="Helsinki"/>
+            <h2>Helsinki</h2>
             <p>
                 Helsinki is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
-        <div style="height:400px;width:20%;background-color:#b7ac9e;float:left;margin:2%;overflow: scroll;">
-            <img src="london.jpeg" alt="London" style="width:100%;height:200px"/>
+        <div class="card" id="gray">
+            
+            <img src="london.jpeg" alt="London"/>
+            <h2>London</h2>
             <p>
                 London is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
-        <hr/>
+        <!-- <div style="background-color: orange;height:300px;width:100px"></div> -->
 
-        <div style="height:300px;width:80%;background-color:#b7ac9e;margin-left:10%;float:left">
-            <div style="float: left;width:40%;">
-                <img src="london.jpeg" alt="London" style="width:80%;height:80%;margin-left:8%;margin-top:7%;"/>
+        <!-- <div id="flatCard">
+            <div class="section1">
+                <img src="london.jpeg" alt="London"/>
             </div>
            
-            <div  style="float: left;width:50%;overflow: scroll;height: 100%;">
+            <div  id="section2">
                 <h1>London</h1>
                 <p>
                     London is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -46,29 +113,6 @@
                 </p>
             </div>
             
-        </div>
-
-        <hr/>
-        <!--Helsinki Card-->
-        <div style="height:300px;width:80%;background-color:#6ba6c8;margin-left:10%;float:left;margin-top:1%">
-            <div style="float: left;width:40%;">
-                <img src="helsinki.jpeg" alt="Helsinki" style="width:80%;height:80%;margin-left:8%;margin-top:7%;"/>
-            </div>
-           
-            <div  style="float: left;width:50%;overflow: scroll;height: 100%;">
-                <h1>Helsinki</h1>
-                <p>
-                    London is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                <p>
-                    London is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-            
-        </div>
-        
-
-
-        
+        </div> -->
     </body>
 </html>
