@@ -14,18 +14,6 @@ header{
     background-color: #3b2632;
 }
 
-
-/*Search Section*/
-#search{
- height:450px;
- /* border:1px solid red;
- background-color: #d9b6ca; */
- background-image: url('image/food-wallpaper.png');
- background-repeat: no-repeat;
- /* background-size: cover; */
- background-size: 100% 450px;
-}
-
 #brand{
     float:left;
     color:white;
@@ -42,6 +30,19 @@ header{
     height:50px;
 }
 
+
+/*Search Section*/
+#search{
+ height:450px;
+ /* border:1px solid red;
+ background-color: #d9b6ca; */
+ background-image: url('image/food-wallpaper.png');
+ background-repeat: no-repeat;
+ /* background-size: cover; */
+ background-size: 100% 450px;
+}
+
+
 .logo{
     height:150px;
     width:150px;
@@ -51,6 +52,30 @@ header{
     margin-top:2%;
     position: absolute;
     font-size: 90px;
+    animation: revolve 10s infinite;
+}
+
+@keyframes revolve {
+    0%{
+        margin-left: 2%;
+        transform: rotate(30deg);
+    }
+    25%{
+        margin-left: 20%;
+        transform: rotate(90deg);
+    }
+    50%{
+        margin-left: 40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        margin-left: 80%;
+        transform: rotate(270deg);
+    }
+    100%{
+        margin-left: 40%;
+        transform: rotate(360deg);
+    }
 }
 
 .logo> span{
@@ -108,12 +133,19 @@ select{
     margin-left:2%;
 }
 
+.quickHeading:hover{
+    font-size:45px;
+    color:red
+}
+
 .quickSubHeading{
     color:gray;
     font-size:20px;
     line-height: 2;
     margin-left:2%;
 }
+
+
 
 .tileContainer{
     height:180px;
@@ -122,6 +154,36 @@ select{
     margin-top:3%;
     box-shadow:10px 20px 10px gray;
     float: left;
+    animation:dance 15s;
+}
+
+@keyframes dance {
+    0%{
+        transform: rotate(-5deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
+
+.tileContainer:hover{
+   transform: scale(1.1);
+    /* transform: skewX(30deg); */
+    /* transform: rotate(180deg); */
+    /* transform: translate(180px, 200px); */
 }
 
 .tileComponent1{
@@ -180,4 +242,96 @@ footer{
 
 ul{
     list-style-type: none;
+}
+
+@media screen and (max-width: 1600px){
+    body{
+        background-color:rgb(188, 188, 222)
+    }
+}
+
+@media screen and (max-width: 1400px){
+    body{
+        background-color:rgb(237, 198, 211)
+    }
+    .dropdown {
+        margin-left: 31%;
+        margin-top: 26%;
+    }
+    #heading {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        background-color:rgb(189, 230, 205)
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color:rgb(239, 227, 173)
+    }
+    .tileContainer{
+        width:45%;
+    }
+    #heading {
+        margin-top: 23%;
+    }
+    .dropdown {
+        margin-left: 27%;
+        margin-top: 33%;
+        width: 65%;
+    }
+}
+@media screen and (max-width: 945px){
+
+    #heading {
+        margin-left: 20%;
+    }
+    .dropdown {
+        margin-left: 23%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color:rgb(167, 233, 236)
+    }
+    .logo{
+        margin-left: 34%;
+    }
+    #heading {
+        margin-top: 32%;
+        margin-left: 1%;
+    }
+    .dropdown {
+        margin-left: 1%;
+        margin-top: 45%;
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color:rgb(232, 159, 160)
+    }
+    .tileContainer{
+        width:100%;
+    }
+    .logo {
+        margin-left: 30%;
+    }
+    #heading {
+        margin-top: 45%;
+        margin-left: 2%;
+        font-size: 46px;
+    }
+    .dropdown {
+        margin-top: 62%;
+        width: 98%;
+    }
 }

@@ -1,0 +1,191 @@
+body{
+   margin: 0px;
+   background-color: #d9b6ca; 
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Header Section*/
+header{
+    height: 60px;
+    /* border: 5px solid hotpink; */
+    background-color: #3b2632;
+}
+
+#brand{
+    float:left;
+    color:white;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+#social{
+    float:right
+}
+
+.socialLogo{
+    height:50px;
+}
+
+/* Content*/
+#content{
+    width:80%;
+    height:600px;
+    display:flex;
+    margin-left:10%;
+    margin-top:2%
+}
+
+#imgDiv{
+    height:450px;
+    width:45%;
+    border:8px solid #3b2632;
+}
+
+#imgDiv > img {
+    height:100%;
+    width: 100%;
+}
+
+#contentDiv{
+    height:550px;
+    width:47%;
+    margin-left:5%;
+    margin-top:-2%
+}
+
+.feature_Container{
+    display: flex;
+}
+
+figure{
+    margin-left:5%
+}
+
+.featureIcon{
+    height:100px;
+    width:100px
+}
+
+
+
+/*Footer Section*/
+footer{
+    /* border:5px groove green; */
+    background-color: #3b2632;
+    color:white;
+    text-align: center;
+}
+
+.footText{
+    font-size:20px;
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1600px){
+    body{
+        background-color:rgb(188, 188, 222)
+    }
+}
+
+@media screen and (max-width: 1400px){
+    body{
+        background-color:rgb(237, 198, 211)
+    }
+    .dropdown {
+        margin-left: 31%;
+        margin-top: 26%;
+    }
+    #heading {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        background-color:rgb(189, 230, 205)
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color:rgb(239, 227, 173)
+    }
+    .tileContainer{
+        width:45%;
+    }
+    #heading {
+        margin-top: 23%;
+    }
+    .dropdown {
+        margin-left: 27%;
+        margin-top: 33%;
+        width: 65%;
+    }
+}
+@media screen and (max-width: 945px){
+
+    #heading {
+        margin-left: 20%;
+    }
+    .dropdown {
+        margin-left: 23%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color:rgb(167, 233, 236)
+    }
+    .logo{
+        margin-left: 34%;
+    }
+    #heading {
+        margin-top: 32%;
+        margin-left: 1%;
+    }
+    .dropdown {
+        margin-left: 1%;
+        margin-top: 45%;
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color:rgb(232, 159, 160)
+    }
+    .tileContainer{
+        width:100%;
+    }
+    .logo {
+        margin-left: 30%;
+    }
+    #heading {
+        margin-top: 45%;
+        margin-left: 2%;
+        font-size: 46px;
+    }
+    .dropdown {
+        margin-top: 62%;
+        width: 98%;
+    }
+}

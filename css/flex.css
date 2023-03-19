@@ -4,13 +4,15 @@ header{
 }
 
 #container{
-    display: inline-block
+    display: flex;
+    /* flex-direction:row-reverse; */
+    flex-wrap: wrap;
+    justify-content:center
 }
 .card{
     height:400px;
     width:20%;
     background-color:#98bbe5;
-    float: left;
     margin:2%;
     overflow: scroll;
   
