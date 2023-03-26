@@ -50,46 +50,133 @@
                 <button class="btn btn-success">Click</button>
                 <button class="btn btn-warning">Click</button>
                 <button class="btn btn-danger">Click</button>
-                <button class="btn btn-info">Click</button>
+                <button class="btn btn-info" data-toggle="modal" data-target="#devModal">Click</button>
             </div>
+            
+            <div id="devModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Developer Funnel</h4> 
+                        </div>
+                        <div class="modal-body">
+                            <h1>Bootstrap Page</h1>
+                            <p>
+                                Bootstrap is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="devCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#devCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#devCarousel" data-slide-to="1"></li>
+                    <li data-target="#devCarousel" data-slide-to="2"></li>
+                </ol>
+               <div class="carousel-inner">
+                   <div class="item active">
+                       <img src="one.jpg" alt="one"/>
+                   </div>
+                   <div class="item">
+                    <img src="two.jpg" alt="one"/>
+                    </div>
+                    <div class="item">
+                        <img src="three.jpg" alt="one"/>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#devCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#devCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
             <hr/>
                 <span class="glyphicon glyphicon-print"></span>
                 <span class="glyphicon glyphicon-trash delete"></span>
                 <span class="glyphicon glyphicon-edit edit"></span>
             <hr/>
-           <div class="panel panel-success">
-               <div class="panel-heading">
-                    <h3>Students</h3>
-               </div>
-               <div class="panel-body">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>RollNo</th>
-                                <th>Name</th>
-                                <th>Subject</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="info">
-                                <td>1</td>
-                                <td>Amit</td>
-                                <td>JavaScript</td>
-                            </tr>
-                            <tr class="success">
-                                <td>2</td>
-                                <td>Kanika</td>
-                                <td>React</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Nippun</td>
-                                <td>NodeJs</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                             <h3>Students</h3>
+                        </div>
+                        <div class="panel-body">
+                             <table class="table table-bordered table-striped">
+                                 <thead>
+                                     <tr>
+                                         <th>RollNo</th>
+                                         <th>Name</th>
+                                         <th>Subject</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody>
+                                     <tr class="info">
+                                         <td>1</td>
+                                         <td>Amit</td>
+                                         <td>JavaScript</td>
+                                     </tr>
+                                     <tr class="success">
+                                         <td>2</td>
+                                         <td>Kanika</td>
+                                         <td>React</td>
+                                     </tr>
+                                     <tr>
+                                         <td>3</td>
+                                         <td>Nippun</td>
+                                         <td>NodeJs</td>
+                                     </tr>
+                                 </tbody>
+                             </table>
+                         </div>
+                    </div>
                 </div>
-           </div>
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                             <h3>Students</h3>
+                        </div>
+                        <div class="panel-body">
+                             <table class="table table-bordered table-striped">
+                                 <thead>
+                                     <tr>
+                                         <th>RollNo</th>
+                                         <th>Name</th>
+                                         <th>Subject</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody>
+                                     <tr class="info">
+                                         <td>1</td>
+                                         <td>Amit</td>
+                                         <td>JavaScript</td>
+                                     </tr>
+                                     <tr class="success">
+                                         <td>2</td>
+                                         <td>Kanika</td>
+                                         <td>React</td>
+                                     </tr>
+                                     <tr>
+                                         <td>3</td>
+                                         <td>Nippun</td>
+                                         <td>NodeJs</td>
+                                     </tr>
+                                 </tbody>
+                             </table>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            
             
 
 
