@@ -9,3 +9,32 @@
     font-size: 20px;
     color:red
 }
+
+#first{
+    height:200px;
+    background-color:rgb(161, 236, 161)
+}
+#second{
+    height:200px;
+    background-color:rgb(236, 221, 156)
+}
+#third{
+    height:200px;
+    background-color:rgb(236, 161, 193)
+}
+#fourth{
+    height:200px;
+    background-color:rgb(188, 161, 236)
+}
+#fifth{
+    height:200px;
+    background-color:rgb(161, 236, 232)
+}
+#sixth{
+    height:200px;
+    background-color:rgb(204, 132, 113)
+}
+#seventh{
+    height:200px;
+    background-color:rgb(79, 116, 79)
+}
