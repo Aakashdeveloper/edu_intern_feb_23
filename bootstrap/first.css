@@ -38,3 +38,16 @@
     height:200px;
     background-color:rgb(79, 116, 79)
 }
+
+.alignCard{
+    float:left;
+    margin-right:5%
+}
+
+.cardContainer{
+    display: inline-block;
+}
+.fblogo{
+    color: #1170e5;
+    font-size:40px
+}
