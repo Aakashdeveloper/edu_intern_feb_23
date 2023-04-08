@@ -20,7 +20,7 @@ Infinity
 
 var a = "10"
 var b = "20"
-undefined
+
 a+b
 '1020'
 parseInt(a)
@@ -34,14 +34,12 @@ parseInt(a)+parseInt(b)
 
 var a = "10.12"
 var b = "20.11"
-undefined
 parseInt(a)+parseInt(b)
 30
 parseInt(a+b)
 10
 parseFloat(a)+parseFloat(b)
 30.229999999999997
-
 
 var a = "10Ab"
 var b = "Ab10"
@@ -50,7 +48,6 @@ parseInt(a)
 10
 parseInt(b)
 NaN
-
 
 //es6
 var a = "10"
