@@ -176,13 +176,17 @@ xxl > 1400px
 Mathopt
 array
 loop
-///////////////
 mapfilter
 object
-geoloactiona
+geolocation
+///////////////
+
 objectfunction
 objectthis
 classes
 
 
 eval()
+
+https://api.openweathermap.org/data/2.5/forecast/daily?q=davos&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
+https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.9891416&lon=77.0342477&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
