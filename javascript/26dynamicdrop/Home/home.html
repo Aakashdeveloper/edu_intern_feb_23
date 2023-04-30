@@ -3,6 +3,7 @@
         <title>Zomapp</title>
         <link href="image/drinks.png" rel="icon"/>
         <link href="home.css" rel="stylesheet"/>
+        <script src="home.js"></script>
     </head>
     <body>
         <header>
@@ -29,9 +30,8 @@
                 Find Best Place Near You
             </div>
             <div class="dropdown">
-                <select>
+                <select id="city" onchange="getRest()">
                     <option>---SELECT YOUR CITY---</option>
-                     <option>Delhi</option>
                 </select>
                 <select id="restSelect">
                     <option>---SELECT YOUR RESTAURANTS---</option>
@@ -154,5 +154,8 @@
                 <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fblogo" class="socialLogo"/>
             </a>
         </footer>
+        <script>
+            window.onload = getCity();
+        </script>
     </body>
 </html>
