@@ -190,3 +190,69 @@ dynamicdrop
 
 
 eval()
+
+
+
+//////
+Ecma Script
+> Es5
+> Es6
+
+// Data types
+// let const
+// opertions
+// String opt
+// Array opt
+// ifelse
+// function
+// coupons
+// dom (light dark)
+// map filter
+// object
+// geolocation
+
+////
+nodejs
+/////
+
+Single threaded Async Non-blocking I/O
+
+npm
+> Node Package manager
+(163450)
+////
+JSON
+> JavaScript Object notation
+(Way to represent data)
+(key value pair, support unstreuctred)
+[
+    {
+        "name":"Amit",
+        "city":"Amsterdam"
+    },
+    {
+        "name":"Nikita",
+        "city":"Pune",
+        "subject":"Node"
+    }
+]
+/////////////////
+package.json
+> Entry point to the app
+> First file that run in the app
+> It contains all the package name and version
+> It contains meta data (name,version,description)
+> It contains Script(start,test,build)
+
+
+////////
+Step to generate package.json
+* NodeJs must be installed in laptop
+> go inside the folder using terminal/cmd
+> npm init
+> Answer all question
+> type "yes"
+
+Step to install packages
+> go inside the folder using terminal/cmd
+> npm i packagename/npm install packagename

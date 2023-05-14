@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <style>
+            .item{
+                height:300px;
+                width:250px;
+            }
+            .item > img{
+                height:300px;
+                width:100%
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+              <div class="item"><img src="images/amsterdam.jpeg"></div>
+              <div class="item"><img src="images/manali.jpeg"></div>
+              <div class="item"><img src="images/london.jpeg"></div>
+              <div class="item"><img src="images/manali2.jpeg"></div>
+              <div class="item"><img src="images/amsterdam.jpeg"></div>
+              <div class="item"><img src="images/manali2.jpeg"></div>
+              <div class="item"><img src="images/london.jpeg"></div>
+              <div class="item"><img src="images/manali.jpeg"></div>
+              <div class="item"><img src="images/amsterdam.jpeg"></div>
+              
+            </div>
+          </div>
+        
+          <script type="text/javascript" src="owlcarousel/jquery-3.5.1.js"></script>
+          <script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>
+          <script>
+            $('.owl-carousel').owlCarousel({
+              loop:true,
+              margin:15,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  600:{
+                      items:3
+                  },
+                  1000:{
+                      items:5
+                  }
+              }
+          });
+          </script>
+    </body>
+</html>

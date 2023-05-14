@@ -4,6 +4,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="forms.css">
+        <script src="forms.js"></script>
     </head>
     <body>
         <div class="container">
@@ -12,27 +13,33 @@
                 <div class="panel-heading">
                     Forms
                 </div>
+                <form>
                 <div class="panel-body">
                     <div class="form-group" id="fdiv">
                         <label for="fname" class="control-label">FirstName</label>
-                        <input name="fname"  class="form-control" id="fname"/>
+                        <input name="fname"  class="form-control" id="fname"
+                        onblur="validateFname()"/>
                         <p id="fout"></p>
                     </div>  
                 </div>
                 <div class="panel-body">
                     <div class="form-group" id="fdiv">
-                        <label for="email" class="control-label">Email</label>
-                        <input name="email"  class="form-control" id="email"/>
+                        <label for="mail" class="control-label">Email</label>
+                        <input name="email"  class="form-control" id="mail"
+                        oninput="validateEmail()"/>
                         <p id="eout"></p>
                     </div>  
                 </div>
                 <div class="panel-body">
                     <div class="form-group" id="fdiv">
                         <label for="pwd" class="control-label">Password</label>
-                        <input name="pwd"  class="form-control" id="pwd"/>
+                        <input name="pwd"  class="form-control" id="pwd"
+                        type="password" minlength="8"/>
                         <p id="pout"></p>
                     </div>  
                 </div>
+                <button type="submit">Submit</button>
+            </form>
             </div>
         </div>
     </body>
