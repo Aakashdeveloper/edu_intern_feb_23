@@ -256,3 +256,15 @@ Step to generate package.json
 Step to install packages
 > go inside the folder using terminal/cmd
 > npm i packagename/npm install packagename
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+
+//es6
+const add = (a,b) => {
+    return a+b
+}
