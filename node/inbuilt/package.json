@@ -1,0 +1,14 @@
+{
+  "name": "staticapi",
+  "version": "1.0.0",
+  "description": "this is about server",
+  "main": "fs.js",
+  "scripts": {
+    "start": "node staticapi.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "developer funnel",
+  "license": "ISC"
+}
