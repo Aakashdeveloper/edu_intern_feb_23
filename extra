@@ -268,3 +268,36 @@ add(1,2)
 const add = (a,b) => {
     return a+b
 }
+
+//
+Local dependency 
+> local to the folder
+> used inside the same folder only
+> npm i package name
+
+Global dependency 
+> Install in the C drive
+> Mainly use to start, build the app
+> open cmd as adminstrator
+> npm i -g package name
+
+nodemon
+
+
+C > Create (Post)
+R > Read   (Get)
+U > Update (Put)
+D > Delete (Delete)
+
+
+mongodb
+// Local
+https://www.mongodb.com/try/download/community
+> Create folder by the of data in c drive
+C:/data
+> Create folder db inside data
+C:/data/db
+
+// Cloud
+> https://cloud.mongodb.com/
+> singup with google

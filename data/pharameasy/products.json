@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "catgeoryId":1,
+        "name":"Skin Care Creame",
+        "cost":700,
+        "brand":"Estee Lauder"
+    },
+    {
+        "id":2,
+        "catgeoryId":1,
+        "name":"Skin Care Secrum",
+        "cost":5700,
+        "brand":"Tom Ford"
+    },
+    {
+        "id":3,
+        "catgeoryId":2,
+        "name":"Hair Care Creame",
+        "cost":700,
+        "brand":"Xyz Lauder"
+    },
+    {
+        "id":4,
+        "catgeoryId":2,
+        "name":"Hair Gel",
+        "cost":5700,
+        "brand":"Booby Brown"
+    }
+
+]
