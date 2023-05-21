@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "category":"handpicked movies"
+    },
+    {
+        "id":2,
+        "category":"aha originals"
+    },
+    {
+        "id":3,
+        "category":"Sports"
+    },
+    {
+        "id":4,
+        "category":"kids"
+    }
+]
