@@ -290,14 +290,3 @@ U > Update (Put)
 D > Delete (Delete)
 
 
-mongodb
-// Local
-https://www.mongodb.com/try/download/community
-> Create folder by the of data in c drive
-C:/data
-> Create folder db inside data
-C:/data/db
-
-// Cloud
-> https://cloud.mongodb.com/
-> singup with google

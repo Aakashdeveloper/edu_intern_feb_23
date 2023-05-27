@@ -1,0 +1,118 @@
+mongodb
+// Local
+// window
+https://www.mongodb.com/try/download/community
+> Create folder by the of data in c drive
+C:/data
+> Create folder db inside data
+C:/data/db
+
+//mac/linux
+> open terminal
+> mkdir data/db
+
+
+// Cloud
+> https://cloud.mongodb.com/
+> singup with google
+
+/////
+mongo server
+> Should always be running if using the application
+// To start mongo sever
+* Windows
+> open the cmd and go inside bin folder
+> C:/program file/mongodb/server/5.3/bin
+> Mongod
+(start mongo dever on port 27017)
+
+//mac/linux
+> open terminal
+> mongod --dbpath data/db
+
+mongo client(cli)
+> To test any query we need cli
+// To start mongo cli
+* Windows
+> open the cmd and go inside bin folder
+> C:/program file/mongodb/server/5.3/bin
+> Mongo
+
+//mac/linux
+> open terminal
+> mongo
+
+///Sql
+
+RollNo |  Hindi | English |  Computer |
+   1   |  80    |         |    90     |
+   2   |        |   78    |           |
+   3   |  76    |         |           |
+
+//Mongo
+[
+    {
+        rollNo:1,
+        Hindi:80,
+        Computer:90
+    },
+    {
+        rollNo:2,
+        English:78
+    },
+    {
+        rollNo:2,
+        Hindi:76
+    }
+]
+
+
+
+SQL        Mongo
+Database   Database
+Table      Collections
+Row        Document
+Select     Find
+Insert     Insert
+Update     Update
+Delete     Remove
+
+//See all dbs
+show dbs
+
+//go inside database
+use databasename
+
+//see all collection
+show collections
+
+// see all records in collection
+db.collectionName.find()
+
+
+//Create new database
+use database
+
+
+//step to create collection
+// insert record
+db.user.insert({"name":"Amit"})
+db.user.insert({"name":"Latika"})
+
+
+db.user.insert(
+    [
+        {"name":"Ankita","city":"Delhi"},
+        {"name":"Rohit","city":"Paris"}
+    ]
+)
+
+db.user.insert({"_id":1,"name":"Bhumika"})
+
+db.user.insert({"_id":2,"name":"Abhishek"})
+
+
+_id > Primary Key
+Every record will have
+value is always unique
+If you insert _id it will take else it will insert automatically
