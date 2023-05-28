@@ -290,3 +290,15 @@ U > Update (Put)
 D > Delete (Delete)
 
 
+///
+params
+> What we pass after /
+> If we use param we need to define it
+> if define complousry to pass
+> req.params.parametername
+
+queryParams
+> What we pass after ?
+> No need to define
+> not complousry to pass
+> req.query.queryname

@@ -16,6 +16,26 @@ C:/data/db
 > https://cloud.mongodb.com/
 > singup with google
 
+>  Database Access
+    > Add New Database User
+        > Provide username & Auto generate password
+            > Built-in Role
+                > Altas Admin
+                    > Add User
+
+> Netwrok Access
+    > Add IP Access
+        > 0.0.0.0/0 
+          Anything
+            > Confirm
+
+> Database
+    > connect
+        > Driver
+            mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+             mongodb+srv://Test:abc123@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
 /////
 mongo server
 > Should always be running if using the application
@@ -116,3 +136,8 @@ _id > Primary Key
 Every record will have
 value is always unique
 If you insert _id it will take else it will insert automatically
+
+/// find on basis of condition
+db.collection.find({})
+
+db.restaurants.find({state_id:1})

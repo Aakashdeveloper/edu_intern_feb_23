@@ -1,7 +1,14 @@
+* Zomato App
+
 // page1
 > List of city
+* http://localhost:9120/location
+
 > Rest wrt to city
+* http://localhost:9120/restaurants?stateId=3
+
 > List of Quick Search
+* http://localhost:9120/mealType
 
 //page2
 > Rest wrt to mealtype
