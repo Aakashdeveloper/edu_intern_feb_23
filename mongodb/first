@@ -141,3 +141,8 @@ If you insert _id it will take else it will insert automatically
 db.collection.find({})
 
 db.restaurants.find({state_id:1})
+
+db.restaurants.find({"mealTypes.mealtype_id":1})
+
+
+db.restaurants.find({$and:[{cost:{$gt:100,$lt:500}}]})
