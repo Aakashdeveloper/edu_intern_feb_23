@@ -1,6 +1,7 @@
 let mongo = require('mongodb');
 let {MongoClient} = require('mongodb');
-let mongoUrl ="mongodb://127.0.0.1:27017" 
+// let mongoUrl ="mongodb://127.0.0.1:27017" 
+var mongoUrl = 'mongodb+srv://local:test12345@cluster0.f8vmc.mongodb.net/augintern?retryWrites=true&w=majority';
 //"mongodb+srv://Test:abc123@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority";
 
 let client = new MongoClient(mongoUrl)
@@ -25,7 +26,41 @@ async function getData(colName,query){
     return output
 }
 
+async function postData(colName,data){
+    let output;
+    try{
+        output = await db.collection(colName).insertOne(data)
+    }
+    catch(err){
+        output = {"response":"Error in postData"}
+    }
+    return output
+}
+
+async function updateOrder(colName,condition,data){
+    let output;
+    try{
+        output = await db.collection(colName).updateOne(condition,data)
+    } catch(err){
+        output = {"response":"Error in update data"}
+    }
+    return output
+}
+
+async function deleteOrder(colName,condition){
+    let output;
+    try{
+        output = await db.collection(colName).deleteOne(condition)
+    } catch(err){
+        output = {"response":"Error in delete data"}
+    }
+    return output
+}
+
 module.exports = {
     dbConnect,
-    getData
+    getData,
+    postData,
+    updateOrder,
+    deleteOrder
 }

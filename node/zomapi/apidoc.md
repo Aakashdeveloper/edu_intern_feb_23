@@ -2,13 +2,16 @@
 
 // page1
 > List of city
-* http://localhost:9120/location
+* https://internmay.onrender.com/location
 
 > Rest wrt to city
 * http://localhost:9120/restaurants?stateId=3
 
+* https://internmay.onrender.com/restaurants?stateId=3
+
 > List of Quick Search
 * http://localhost:9120/mealType
+* https://internmay.onrender.com/mealType
 
 //page2
 > Rest wrt to mealtype
@@ -30,11 +33,38 @@
 
 //Page4
 > Details of Menu selected
+* http://localhost:9120/menuDetails
+ {"id":[4,8,21,9]}
+
 > Place Order
+*  http://localhost:9120/placeOrder
+{
+	"orderId" : 2,
+	"name" : "Amit",
+	"email" : "amit@gmail.com",
+	"address" : "Hom 65",
+	"phone" : 8934645457,
+	"cost" : 612,
+	"menuItem" : [
+		45,
+		34,
+		41
+	],
+	"status" : "Delivered"
+}
+
 
 // Page5
 > List of all the orders
 * http://localhost:9120/orders
 
 > Update orders details
+* http://localhost:9120/updateOrder
+{
+    "_id":"647c9ef070ab7d9b545a4090",
+    "status":"Out for delivery"
+}
+
 > Delete Orders
+* http://localhost:9120/deleteOrder
+{"_id":"647c9f2e36e6ecf8fde6722b"}

@@ -9,6 +9,8 @@ https://www.youtube.com/developerfunnel (Subscribe)
 https://stackoverflow.com/ (Create Account)
 https://www.linkedin.com/ (Create Account)
 
+https://www.postman.com/ (install)
+
 // Add to chrome
 https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
 
@@ -304,3 +306,15 @@ queryParams
 > No need to define
 > not complousry to pass
 > req.query.queryname
+
+cors > cross origin resource sharing;
+
+9120 >>>> 3000
+
+https://render.com/
+> new
+    > Web Service
+        > Select github repo
+        > Build Command : npm install
+        > Start Command : node app.js
+            > create web service
