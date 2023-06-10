@@ -9,6 +9,10 @@ https://www.youtube.com/developerfunnel (Subscribe)
 https://stackoverflow.com/ (Create Account)
 https://www.linkedin.com/ (Create Account)
 
+https://www.postman.com/ (install)
+
+// Add to chrome
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
 
 /// extension
 > Visual studio code
@@ -290,14 +294,27 @@ U > Update (Put)
 D > Delete (Delete)
 
 
-mongodb
-// Local
-https://www.mongodb.com/try/download/community
-> Create folder by the of data in c drive
-C:/data
-> Create folder db inside data
-C:/data/db
+///
+params
+> What we pass after /
+> If we use param we need to define it
+> if define complousry to pass
+> req.params.parametername
 
-// Cloud
-> https://cloud.mongodb.com/
-> singup with google
+queryParams
+> What we pass after ?
+> No need to define
+> not complousry to pass
+> req.query.queryname
+
+cors > cross origin resource sharing;
+
+9120 >>>> 3000
+
+https://render.com/
+> new
+    > Web Service
+        > Select github repo
+        > Build Command : npm install
+        > Start Command : node app.js
+            > create web service
