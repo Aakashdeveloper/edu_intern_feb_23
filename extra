@@ -282,6 +282,7 @@ Local dependency
 Global dependency 
 > Install in the C drive
 > Mainly use to start, build the app
+
 > open cmd as adminstrator
 > npm i -g package name
 
@@ -318,3 +319,16 @@ https://render.com/
         > Build Command : npm install
         > Start Command : node app.js
             > create web service
+
+React> Single page application
+Lib is frontend library which help to make Single page application
+using component based structre
+
+
+>>>>>
+> Go inside the folder where you want new app
+    > npx create-react-app appname
+
+//// To Run the App
+> Go inside the app folder
+> npm start
