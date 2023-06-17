@@ -1,0 +1,26 @@
+
+/*Footer Section*/
+footer{
+    /* border:5px groove green; */
+    background-color: #3b2632;
+    color:white;
+    text-align: center;
+}
+
+.footText{
+    font-size:20px;
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+
+ul{
+    list-style-type: none;
+}
