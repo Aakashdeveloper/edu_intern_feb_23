@@ -1,0 +1,22 @@
+{
+  "orders": [
+    {
+      "id": 59034,
+      "rest_name": "Chandni Chowk 2 Bangalore",
+      "name": "Nidhi",
+      "email": "nidhi@gmail.com",
+      "cost": 620,
+      "phone": "9876543211",
+      "address": "Hno 12 Sec 34"
+    },
+    {
+      "id": 69693,
+      "rest_name": "Captain Sam's",
+      "name": "Nidhi",
+      "email": "nidhi@gmail.com",
+      "cost": 532,
+      "phone": "9876543211",
+      "address": "Hno 12 Sec 34"
+    }
+  ]
+}

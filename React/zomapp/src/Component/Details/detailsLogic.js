@@ -1,15 +1,17 @@
 import React,{useState,useEffect} from 'react';
 import './details.css';
 import axios from 'axios';
-import {Link} from 'react-dom';
-import { useParams, useSearchParams } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 
 const base_url = "http://3.17.216.66:4000";
 
 const DetailDisplay = () => {
 
+    let navigate = useNavigate()
     let [searchParams] = useSearchParams()
     let [restDetails, setrestDetails] = useState()
+    let [mealId] = useState(sessionStorage.getItem('mealId'))
 
     let restId = searchParams.getAll('restId');
     const restDetail = async() => {
@@ -20,6 +22,10 @@ const DetailDisplay = () => {
     useEffect(() => {
        restDetail() 
     },[])
+
+    const proceed = () => {
+        navigate(`/placeOrder/${restDetails.restaurant_name}`)
+    }
 
     const renderDetails = () => {
         if(restDetails){
@@ -46,6 +52,13 @@ const DetailDisplay = () => {
                                         <img src="https://i.ibb.co/mD3jpgc/sentizied.png" alt=""/>
                                     </div>
                                 </div>
+                        </div>
+                        <hr/>
+                        <div className="col-md-12">
+                            <Link className="btn btn-danger"
+                            to={`/listing/${mealId}`}>Back</Link> &nbsp;&nbsp;
+                            <button className="btn btn-success"
+                            onClick={proceed}>Procced</button>
                         </div>
                     </div>
                 </>
