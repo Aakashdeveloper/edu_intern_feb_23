@@ -23,7 +23,9 @@ body{
  }
  
  #social{
-     float:right
+     float:right;
+     margin-right: 3%;
+     margin-top: 1%;
  }
  
  .socialLogo{
