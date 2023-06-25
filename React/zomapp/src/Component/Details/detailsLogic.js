@@ -3,6 +3,7 @@ import './details.css';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
+import Header from '../Header';
 
 const base_url = "http://3.17.216.66:4000";
 
@@ -31,6 +32,7 @@ const DetailDisplay = () => {
         if(restDetails){
             return(
                 <>
+                    <Header/>
                     <div className='tileImage'>
                     <div className='imageClass'>
                         <img src={restDetails.restaurant_thumb}

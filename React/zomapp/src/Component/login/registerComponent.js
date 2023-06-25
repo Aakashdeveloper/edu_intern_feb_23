@@ -1,21 +1,17 @@
 import React,{useState} from 'react';
-import { useParams} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
 
-const url = "http://localhost:8899/orders"
+const url = "http://3.17.216.66:5000/api/auth/register"
 
-const PlaceOrder = () => {
-    let params = useParams();
+const Register = () => {
+
     let navigate = useNavigate();
     const initialValues = {
-        id:Math.floor( Math.random()*100000),
-        rest_name: params.restName,
-        name: "Nidhi",
-        email: "nidhi@gmail.com",
-        cost: Math.floor(Math.random()*1000),
-        phone: "9876543211",
-        address: "Hno 12 Sec 34",
+        name: "Arpit",
+        email: "arpit1@gmail.com",
+        password:'12345678',
+        phone: "9876543211"
     };
 
     const [values, setValues] = useState(initialValues);
@@ -38,7 +34,7 @@ const PlaceOrder = () => {
             },
             body:JSON.stringify(values)
         })
-        .then(navigate(`/viewOrder`))
+        .then(navigate(`/login`))
     }
     
 
@@ -47,14 +43,12 @@ const PlaceOrder = () => {
              <Header/>
             <div className="container">
                 <hr/>
-                <div className="panel panel-primary">
+                <div className="panel panel-info">
                     <div className="panel-heading">
-                        <h3>Order For {params.restName}</h3>
+                        <h3>Register</h3>
                     </div>
                     <div className="panel-body">
-                        {/* <input type="hidden" name="cost" value={values.cost}/>
-                        <input type="hidden" name="id" value={values.id}/>
-                        <input type="hidden" name="rest_name" value={values.rest_name}/> */}
+                       
                         <div className="row">
                             <div className="col-md-6 form-group">
                                 <label for="fname" className="control-label">Name</label>
@@ -67,24 +61,20 @@ const PlaceOrder = () => {
                                 name="email" value={values.email} onChange={handleInputChange}/>
                             </div>
                             <div className="col-md-6 form-group">
+                                <label for="email" className="control-label">Password</label>
+                                <input className="form-control" id="password" type="password"
+                                name="password" value={values.password} onChange={handleInputChange}/>
+                            </div>
+                            <div className="col-md-6 form-group">
                                 <label for="email" className="control-label">Phone</label>
                                 <input className="form-control" id="phone"
                                 name="phone" value={values.phone} onChange={handleInputChange}/>
                             </div>
-                            <div className="col-md-6 form-group">
-                                <label for="address" className="control-label">Address</label>
-                                <input className="form-control" id="address"
-                                name="address" value={values.address} onChange={handleInputChange}/>
-                            </div>
                             
                         </div>
-                        <div className="row">
-                            <div className="col-md-12">
-                                <h2>Total Price is Rs. {values.cost}</h2>
-                            </div>
-                        </div>
+                      
                         <button className='btn btn-success' onClick={checkout}>
-                                Submit
+                                Register
                         </button>
                     </div>
                 </div>
@@ -94,4 +84,4 @@ const PlaceOrder = () => {
 
 }
 
-export default PlaceOrder
+export default Register

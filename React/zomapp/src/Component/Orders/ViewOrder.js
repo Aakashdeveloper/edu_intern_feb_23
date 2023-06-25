@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import DisplayOrder from './DisplayOrder';
+import Header from '../Header';
 
 const url = "http://localhost:8899/orders";
 
@@ -14,6 +15,7 @@ const ViewOrder = () => {
 
     return(
         <>
+             <Header/>
             <DisplayOrder orderData={orders}/>
         </>
 

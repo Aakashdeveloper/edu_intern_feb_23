@@ -389,3 +389,10 @@ Props
 /******UserInfo*****/
 (GET) => http://3.17.216.66:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+
+
+npm run build
+
+
+https://app.netlify.com/
