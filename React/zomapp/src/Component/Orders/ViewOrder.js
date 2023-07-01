@@ -8,9 +8,11 @@ const url = "http://localhost:8899/orders";
 const ViewOrder = () => {
 
     const [orders,setOrder] = useState();
+    let sessionData = sessionStorage.getItem('userInfo');
+    let data = JSON.parse(sessionData)
 
     useEffect(() => {
-        axios.get(url).then((res) => {setOrder(res.data)})
+        axios.get(`${url}?email=${data.email}`).then((res) => {setOrder(res.data)})
     })
 
     return(

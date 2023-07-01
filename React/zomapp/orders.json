@@ -17,6 +17,24 @@
       "cost": 532,
       "phone": "9876543211",
       "address": "Hno 12 Sec 34"
+    },
+    {
+      "id": 400,
+      "rest_name": "Captain Sam's",
+      "name": "Nikita",
+      "email": "niki@gmail.com",
+      "cost": 943,
+      "phone": "987654321",
+      "address": "Hno 12 Sec 34"
+    },
+    {
+      "id": 33021,
+      "rest_name": "Captain Sam's",
+      "name": "Nidhi",
+      "email": "nidhi@gmail.com",
+      "cost": 904,
+      "phone": "936464566",
+      "address": "Hno 12 Sec 34"
     }
   ]
 }

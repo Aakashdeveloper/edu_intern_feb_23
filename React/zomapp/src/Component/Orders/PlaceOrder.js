@@ -8,13 +8,17 @@ const url = "http://localhost:8899/orders"
 const PlaceOrder = () => {
     let params = useParams();
     let navigate = useNavigate();
+
+    let sessionData = sessionStorage.getItem('userInfo');
+    let data = JSON.parse(sessionData)
+
     const initialValues = {
         id:Math.floor( Math.random()*100000),
         rest_name: params.restName,
-        name: "Nidhi",
-        email: "nidhi@gmail.com",
+        name: data.name,
+        email: data.email,
         cost: Math.floor(Math.random()*1000),
-        phone: "9876543211",
+        phone: data.phone,
         address: "Hno 12 Sec 34",
     };
 
