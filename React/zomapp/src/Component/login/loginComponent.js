@@ -8,11 +8,12 @@ const Login = () => {
 
     let navigate = useNavigate();
     const initialValues = {
-        email: "arpit1@gmail.com",
+        email: "niki@gmail.com",
         password:'12345678'
     };
 
     const [values, setValues] = useState(initialValues);
+    const [message,setMessage] = useState()
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -32,7 +33,15 @@ const Login = () => {
             },
             body:JSON.stringify(values)
         })
-        .then(navigate(`/login`))
+        .then((res) => res.json())
+        .then((data) => {
+            if(data.auth === false){
+                setMessage(data.token)
+            }else{
+                sessionStorage.setItem('ltk',data.token)
+                navigate(`/`)
+            }
+        })
     }
     
 
@@ -48,6 +57,7 @@ const Login = () => {
                     <div className="panel-body">
                        
                         <div className="row">
+                            <h2 style={{color:'red'}}>{message}</h2>
                             <div className="col-md-6 form-group">
                                 <label for="email" className="control-label">Email</label>
                                 <input className="form-control" id="email"
