@@ -1,4 +1,4 @@
-console > dubegging 
+console > debugging 
 alert > Notification
 confirm > to get yes or no
 prompt > to take user input
